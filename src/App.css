@@ -194,6 +194,19 @@
   width: 100%;
   max-width: 520px;
   filter: drop-shadow(0 12px 40px rgba(66, 75, 46, 0.12));
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  33% {
+    transform: translateY(-12px) rotate(1deg);
+  }
+  66% {
+    transform: translateY(-6px) rotate(-1deg);
+  }
 }
 
 @media (max-width: 1100px) {
