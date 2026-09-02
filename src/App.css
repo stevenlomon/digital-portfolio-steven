@@ -433,6 +433,8 @@
   border-radius: 8px;
   overflow: hidden;
   transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-card:hover {
@@ -453,6 +455,9 @@
 .project-card-body {
   padding: 24px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .project-card-tags {
@@ -487,6 +492,7 @@
   color: var(--text-secondary);
   line-height: 1.7;
   margin-bottom: 16px;
+  flex: 1;
 }
 
 .project-card-link {
