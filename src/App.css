@@ -501,6 +501,13 @@
   color: var(--accent-hover);
 }
 
+.project-card-link-disabled {
+  color: var(--text-secondary);
+  opacity: 0.5;
+  cursor: default;
+  pointer-events: none;
+}
+
 .project-card-link svg {
   width: 13px;
   height: 13px;

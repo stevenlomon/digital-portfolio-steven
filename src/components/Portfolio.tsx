@@ -5,6 +5,7 @@ const projects = [
       "My main project that I'm building and maintaining. A reading tracker built around intentionality, run on its own custom domain. Built with Next.js App Router and Server Components, raw PostgreSQL without an ORM, custom JWT auth with email verification via Resend, and the Open Library API for book metadata.",
     tags: ['Next.js', 'PostgreSQL', 'TypeScript', 'TailwindCSS'],
     featured: true,
+    available: true,
     live: 'https://florilegium.page',
     github: 'https://github.com/stevenlomon/florilegium',
   },
@@ -13,6 +14,7 @@ const projects = [
     description:
       'A full-stack e-commerce store for Linkin Park merchandise with product browsing, user accounts, checkout, and an admin dashboard. ',
     tags: ['Next.js', 'E-Commerce'],
+    available: true,
     live: 'https://linkin-park-e-store.vercel.app/',
     github: 'https://github.com/stevenlomon/linkin-park-e-shop',
   },
@@ -21,6 +23,7 @@ const projects = [
     description:
       'A music discovery app powered by the Spotify API that serves up a shuffled mix of tracks with search and genre filtering.',
     tags: ['TypeScript', 'Spotify API'],
+    available: false,
     live: '#',
     github: 'https://github.com/stevenlomon/FSU-kunskapskontroll-3',
   },
@@ -29,6 +32,7 @@ const projects = [
     description:
       'A Pokemon card collection manager rebuilt from a Vite React SPA into Next.js to explore server components and the App Router. Browse, search, and organize cards via the PokeWallet API.',
     tags: ['Next.js', 'PokéWallet API'],
+    available: true,
     live: 'https://my-next-poke-collection.vercel.app/',
     github: 'https://github.com/stevenlomon/my-poke-collection',
   },
@@ -53,17 +57,23 @@ export default function Portfolio() {
                 </div>
                 <p className="project-card-description">{project.description}</p>
                 <div className="project-card-actions">
-                  <a
-                    href={project.live}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="project-card-link"
-                  >
-                    View Project
-                    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" width="12" height="12">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M3 8h10M9 4l4 4-4 4" />
-                    </svg>
-                  </a>
+                  {project.available !== false ? (
+                    <a
+                      href={project.live}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="project-card-link"
+                    >
+                      View Project
+                      <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" width="12" height="12">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M3 8h10M9 4l4 4-4 4" />
+                      </svg>
+                    </a>
+                  ) : (
+                    <span className="project-card-link project-card-link-disabled">
+                      View Project (Coming Soon)
+                    </span>
+                  )}
                   <a
                     href={project.github}
                     target="_blank"
