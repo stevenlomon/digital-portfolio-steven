@@ -4,7 +4,6 @@ const projects = [
     description:
       "My main project that I'm building and maintaining. A reading tracker built around intentionality. Run on its own custom domain with email user registration",
     tags: ['Next.js', 'PostgreSQL', 'TypeScript'],
-    emoji: '🌿',
     live: 'https://florilegium.page',
     github: 'https://github.com/stevenlomon/florilegium',
   },
@@ -13,7 +12,6 @@ const projects = [
     description:
       'A full-stack e-commerce store for Linkin Park merchandise with product browsing, user accounts, checkout, and an admin dashboard. ',
     tags: ['Next.js', 'E-Commerce'],
-    emoji: '🎸',
     live: 'https://linkin-park-e-store.vercel.app/',
     github: 'https://github.com/stevenlomon/linkin-park-e-shop',
   },
@@ -22,7 +20,6 @@ const projects = [
     description:
       'A music discovery app powered by the Spotify API that serves up a shuffled mix of tracks with search and genre filtering.',
     tags: ['TypeScript', 'Spotify API'],
-    emoji: '🥗',
     live: '#',
     github: 'https://github.com/stevenlomon/FSU-kunskapskontroll-3',
   },
@@ -31,7 +28,6 @@ const projects = [
     description:
       'A Pokemon card collection manager rebuilt from a Vite React SPA into Next.js to explore server components and the App Router. Browse, search, and organize cards via the PokeWallet API.',
     tags: ['Next.js', 'PokéWallet API'],
-    emoji: '⚡',
     live: 'https://my-next-poke-collection.vercel.app/',
     github: 'https://github.com/stevenlomon/my-poke-collection',
   },
@@ -47,16 +43,13 @@ export default function Portfolio() {
         <div className="portfolio-grid">
           {projects.map((project) => (
             <div key={project.title} className="project-card">
-              <div className="project-card-image">
-                {project.emoji}
-              </div>
               <div className="project-card-body">
+                <h3 className="project-card-title">{project.title}</h3>
                 <div className="project-card-tags">
                   {project.tags.map((tag) => (
                     <span key={tag} className="project-tag">{tag}</span>
                   ))}
                 </div>
-                <h3 className="project-card-title">{project.title}</h3>
                 <p className="project-card-description">{project.description}</p>
                 <div className="project-card-actions">
                   <a
