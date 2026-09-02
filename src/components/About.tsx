@@ -32,15 +32,18 @@ export default function About() {
           <div className="about-text">
             <h3>From the classroom to the codebase</h3>
             <p>
-              Before writing any code, I have worked as a librarian and substitute math teacher. Two jobs
+              Before writing any single line of code, I worked as a librarian and substitute math teacher. Two jobs
               that will always hold a very dear and special place in my heart.
-              Those parts of me love to come out in
-              unexpected ways when coding and collaborating .
+              Those parts of me love to come out in unexpected ways when coding and collaborating.
             </p>
             <p>
               My journey into development began with Harvard's CS50 which planted a very important seed.
-              Now I'm a Full-Stack Developer in training at Medieinstitet. I love everything that the
-              Full-Stack world has to offer and I do the best I humanly can to create intuitive and clean UX!
+              Today I'm formalizing that craft as a Full-Stack Developer in training at Medieinstitet. 
+            </p>
+            <p>
+              From designing relational schemas in PostgreSQL to writing typesafe logic in TypeSctipt to shaping clean,
+              responsive UI with TailwindCSS, I love the Full-Stack world so far! And my goal with every project is to create 
+              an intuitive, clean and human-centered user experience.
             </p>
 
             <div className="about-values">
