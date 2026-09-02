@@ -2,8 +2,9 @@ const projects = [
   {
     title: 'Florilegium',
     description:
-      "My main project that I'm building and maintaining. A reading tracker built around intentionality. Run on its own custom domain with email user registration",
-    tags: ['Next.js', 'PostgreSQL', 'TypeScript'],
+      "My main project that I'm building and maintaining. A reading tracker built around intentionality, run on its own custom domain. Built with Next.js App Router and Server Components, raw PostgreSQL without an ORM, custom JWT auth with email verification via Resend, and the Open Library API for book metadata.",
+    tags: ['Next.js', 'PostgreSQL', 'TypeScript', 'TailwindCSS'],
+    featured: true,
     live: 'https://florilegium.page',
     github: 'https://github.com/stevenlomon/florilegium',
   },
@@ -42,7 +43,7 @@ export default function Portfolio() {
 
         <div className="portfolio-grid">
           {projects.map((project) => (
-            <div key={project.title} className="project-card">
+            <div key={project.title} className={`project-card${project.featured ? ' project-card-featured' : ''}`}>
               <div className="project-card-body">
                 <h3 className="project-card-title">{project.title}</h3>
                 <div className="project-card-tags">

@@ -532,6 +532,24 @@
   opacity: 1;
 }
 
+.project-card-featured {
+  grid-column: 1 / -1;
+}
+
+.project-card-featured .project-card-body {
+  padding: 32px;
+}
+
+.project-card-featured .project-card-title {
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+
+.project-card-featured .project-card-description {
+  font-size: 16px;
+  margin-bottom: 48px;
+}
+
 @media (max-width: 768px) {
   .portfolio-grid {
     grid-template-columns: 1fr;
