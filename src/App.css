@@ -315,23 +315,6 @@
   align-items: center;
 }
 
-.about-photo-placeholder {
-  width: 280px;
-  height: 350px;
-  background: var(--bg-warm);
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--text-secondary);
-  font-family: var(--font-sans);
-  font-size: 10px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-}
-
 .about-accents {
   display: flex;
   gap: 16px;
