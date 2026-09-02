@@ -487,7 +487,7 @@
 
 .project-card-link {
   font-family: var(--font-sans);
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.15em;
@@ -502,8 +502,8 @@
 }
 
 .project-card-link svg {
-  width: 12px;
-  height: 12px;
+  width: 13px;
+  height: 13px;
   transition: transform 0.2s;
 }
 
@@ -548,6 +548,21 @@
 .project-card-featured .project-card-description {
   font-size: 16px;
   margin-bottom: 48px;
+}
+
+.project-card-featured .project-card-link {
+  font-size: 13px;
+  gap: 8px;
+}
+
+.project-card-featured .project-card-link svg {
+  width: 15px;
+  height: 15px;
+}
+
+.project-card-featured .project-card-github svg {
+  width: 24px;
+  height: 24px;
 }
 
 @media (max-width: 768px) {
