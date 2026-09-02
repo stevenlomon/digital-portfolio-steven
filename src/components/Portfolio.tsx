@@ -13,7 +13,7 @@ const projects = [
     title: 'Linkin Park E-Store',
     description:
       'A full-stack e-commerce store for Linkin Park merchandise with product browsing, user accounts, checkout, and an admin dashboard. ',
-    tags: ['Next.js', 'E-Commerce'],
+    tags: ['Next.js', 'TypeScript', 'TailwindCSS'],
     available: true,
     live: 'https://linkin-park-e-store.vercel.app/',
     github: 'https://github.com/stevenlomon/linkin-park-e-shop',
@@ -31,7 +31,7 @@ const projects = [
     title: 'MyPokéCollection',
     description:
       'A Pokemon card collection manager rebuilt from a Vite React SPA into Next.js to explore server components and the App Router. Browse, search, and organize cards via the PokeWallet API.',
-    tags: ['Next.js', 'PokéWallet API'],
+    tags: ['Next.js', 'TypeScript', 'TailwindCSS', 'PokéWallet API'],
     available: true,
     live: 'https://my-next-poke-collection.vercel.app/',
     github: 'https://github.com/stevenlomon/my-poke-collection',
