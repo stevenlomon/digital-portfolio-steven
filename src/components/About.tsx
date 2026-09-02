@@ -32,7 +32,7 @@ export default function About() {
           <div className="about-text">
             <h3>From the classroom to the codebase</h3>
             <p>
-              I started my career as a math teacher and librarian. Two jobs
+              Before writing any code, I have worked as a librarian and substitute math teacher. Two jobs
               that will always hold a very dear and special place in my heart.
               Those parts of me love to come out in
               unexpected ways when coding and collaborating .
@@ -47,21 +47,14 @@ export default function About() {
               <div className="value-card">
                 <p className="value-card-label">Clear Communication</p>
                 <p>
-                  Years of teaching taught me that the best code, like the best
-                  lesson, explains itself.
-                </p>
-              </div>
-              <div className="value-card">
-                <p className="value-card-label">Teaching &amp; Learning</p>
-                <p>
-                  I will do both for as long as my lungs work. Life long learning; I'm a student of life
+                  In teaching and coding alike, I wholeheartedly believe that communication is the foundation.
                 </p>
               </div>
               <div className="value-card">
                 <p className="value-card-label">First Principles</p>
                 <p>
-                  Understand the foundations before reaching for the framework.
-                  Build from the ground up.
+                  I value understanding the fundamentals before reaching for the framework.
+                  Building from the ground up.
                 </p>
               </div>
               <div className="value-card">
@@ -69,6 +62,12 @@ export default function About() {
                 <p>
                   Iteration over perfection. Small steps, compounding over time.
                   The turtle always finishes.
+                </p>
+              </div>
+              <div className="value-card">
+                <p className="value-card-label">Teaching &amp; Learning</p>
+                <p>
+                  I will do both for as long as my lungs work! Life long learning. I'm a student of life.
                 </p>
               </div>
             </div>
