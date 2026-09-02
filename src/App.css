@@ -400,6 +400,18 @@
     align-items: center;
   }
 
+  .about-photo-area .about-accents {
+    margin-top: 16px;
+  }
+
+  .about-accent-icon:first-child {
+    margin-left: 0;
+  }
+
+  .about-accent-icon:last-child {
+    margin-right: 0;
+  }
+
   .about-values {
     grid-template-columns: 1fr;
   }
