@@ -2,34 +2,38 @@ const projects = [
   {
     title: 'Florilegium',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      "My main project that I'm building and maintaining. A reading tracker built around intentionality. Run on its own custom domain with email user registration",
     tags: ['Next.js', 'PostgreSQL', 'TypeScript'],
     emoji: '🌿',
-    link: '#',
+    live: 'https://florilegium.page',
+    github: 'https://github.com/stevenlomon/florilegium',
   },
   {
     title: 'Linkin Park E-Store',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation.',
-    tags: ['React', 'E-Commerce'],
+      'A full-stack e-commerce store for Linkin Park merchandise with product browsing, user accounts, checkout, and an admin dashboard. ',
+    tags: ['Next.js', 'E-Commerce'],
     emoji: '🎸',
-    link: '#',
+    live: 'https://linkin-park-e-store.vercel.app/',
+    github: 'https://github.com/stevenlomon/linkin-park-e-shop',
   },
   {
     title: 'Vibe Salad',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate.',
-    tags: ['React', 'API'],
+      'A music discovery app powered by the Spotify API that serves up a shuffled mix of tracks with search and genre filtering.',
+    tags: ['TypeScript', 'Spotify API'],
     emoji: '🥗',
-    link: '#',
+    live: '#',
+    github: 'https://github.com/stevenlomon/FSU-kunskapskontroll-3',
   },
   {
-    title: 'Pokémon Collector',
+    title: 'MyPokéCollection',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Excepteur sint occaecat cupidatat non proident.',
-    tags: ['React', 'PokéAPI'],
+      'A Pokemon card collection manager rebuilt from a Vite React SPA into Next.js to explore server components and the App Router. Browse, search, and organize cards via the PokeWallet API.',
+    tags: ['Next.js', 'PokéWallet API'],
     emoji: '⚡',
-    link: '#',
+    live: 'https://my-next-poke-collection.vercel.app/',
+    github: 'https://github.com/stevenlomon/my-poke-collection',
   },
 ]
 
@@ -42,14 +46,7 @@ export default function Portfolio() {
 
         <div className="portfolio-grid">
           {projects.map((project) => (
-            <a
-              key={project.title}
-              href={project.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="project-card"
-              style={{ textDecoration: 'none', color: 'inherit' }}
-            >
+            <div key={project.title} className="project-card">
               <div className="project-card-image">
                 {project.emoji}
               </div>
@@ -61,14 +58,32 @@ export default function Portfolio() {
                 </div>
                 <h3 className="project-card-title">{project.title}</h3>
                 <p className="project-card-description">{project.description}</p>
-                <span className="project-card-link">
-                  View Project
-                  <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M3 8h10M9 4l4 4-4 4" />
-                  </svg>
-                </span>
+                <div className="project-card-actions">
+                  <a
+                    href={project.live}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="project-card-link"
+                  >
+                    View Project
+                    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" width="12" height="12">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M3 8h10M9 4l4 4-4 4" />
+                    </svg>
+                  </a>
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="project-card-github"
+                    aria-label={`${project.title} on GitHub`}
+                  >
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+                      <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                    </svg>
+                  </a>
+                </div>
               </div>
-            </a>
+            </div>
           ))}
         </div>
       </section>
