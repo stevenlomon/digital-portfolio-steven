@@ -452,6 +452,7 @@
 
 .project-card-body {
   padding: 24px;
+  position: relative;
 }
 
 .project-card-tags {
@@ -512,6 +513,27 @@
 
 .project-card-link:hover svg {
   transform: translateX(3px);
+}
+
+.project-card-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.project-card-github {
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  color: var(--text-secondary);
+  opacity: 0.5;
+  transition: all 0.2s;
+  display: inline-flex;
+}
+
+.project-card-github:hover {
+  color: var(--accent);
+  opacity: 1;
 }
 
 @media (max-width: 768px) {
