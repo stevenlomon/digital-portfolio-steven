@@ -11,10 +11,6 @@ export default function Hero() {
             Full-Stack hatchling, lover of everything music and book related, and hobby gardener tending to the garden that is{' '}
             <em>Florilegium</em>
           </p>
-          <p className="hero-description">
-            I build things for the web slowly,
-            deliberately, and with care. Intentional, grounded, human.
-          </p>
           <a href="#portfolio" className="hero-cta">
             View My Work
             <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" width="14" height="14">
