@@ -299,27 +299,35 @@
 .about-layout {
   display: grid;
   grid-template-columns: 320px 1fr;
-  gap: 64px;
-  align-items: stretch;
+  column-gap: 64px;
 }
 
 .about-photo-area {
+  grid-column: 1;
+  grid-row: 1;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
-.about-photo-area .about-accents {
-  flex: 1;
-  display: flex;
-  align-items: flex-end;
+.about-text {
+  grid-column: 2;
+  grid-row: 1;
 }
 
 .about-accents {
+  grid-column: 1;
+  grid-row: 2;
+  align-self: end;
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
+}
+
+.about-values {
+  grid-column: 2;
+  grid-row: 2;
 }
 
 .about-accent-icon {
@@ -396,13 +404,18 @@
     gap: 40px;
   }
 
-  .about-photo-area {
-    align-items: center;
+  .about-photo-area,
+  .about-text,
+  .about-accents,
+  .about-values {
+    grid-column: auto;
+    grid-row: auto;
   }
 
-  .about-photo-area .about-accents {
-    margin-top: 16px;
-  }
+  .about-photo-area { order: 1; }
+  .about-text { order: 2; }
+  .about-accents { order: 3; align-self: auto; justify-content: center; gap: 24px; }
+  .about-values { order: 4; margin-top: 0; }
 
   .about-accent-icon:first-child {
     margin-left: 0;

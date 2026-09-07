@@ -15,18 +15,6 @@ export default function About() {
               src={portfolioPic}
               alt="Me :))"
             />
-            <div className="about-accents">
-              <img
-                src={cs50Duck}
-                alt="CS50 rubber duck"
-                className="about-accent-icon"
-              />
-              <img
-                src={UkiyoFrog}
-                alt="Ukiyo-e style frog"
-                className="about-accent-icon"
-              />
-            </div>
           </div>
 
           <div className="about-text">
@@ -38,41 +26,54 @@ export default function About() {
             </p>
             <p>
               My journey into development began with Harvard's CS50 which planted a very important seed.
-              Today I'm formalizing that craft as a Full-Stack Developer in training at Medieinstitet. 
+              Today I'm formalizing that craft as a Full-Stack Developer in training at Medieinstitet.
             </p>
             <p>
               From designing relational schemas in PostgreSQL to writing typesafe logic in TypeSctipt to shaping clean,
-              responsive UI with TailwindCSS, I love the Full-Stack world so far! And my goal with every project is to create 
+              responsive UI with TailwindCSS, I love the Full-Stack world so far! And my goal with every project is to create
               an intuitive, clean and human-centered user experience.
             </p>
+          </div>
 
-            <div className="about-values">
-              <div className="value-card">
-                <p className="value-card-label">Clear Communication</p>
-                <p>
-                  In teaching and coding alike, I wholeheartedly believe that communication is the foundation.
-                </p>
-              </div>
-              <div className="value-card">
-                <p className="value-card-label">First Principles</p>
-                <p>
-                  I value understanding the fundamentals before reaching for the framework.
-                  Building from the ground up.
-                </p>
-              </div>
-              <div className="value-card">
-                <p className="value-card-label">Slow &amp; Steady</p>
-                <p>
-                  Iteration over perfection. Small steps, compounding over time.
-                  The turtle always finishes.
-                </p>
-              </div>
-              <div className="value-card">
-                <p className="value-card-label">Teaching &amp; Learning</p>
-                <p>
-                  I will do both for as long as my lungs work! Life long learning. I'm a student of life.
-                </p>
-              </div>
+          <div className="about-accents">
+            <img
+              src={cs50Duck}
+              alt="CS50 rubber duck"
+              className="about-accent-icon"
+            />
+            <img
+              src={UkiyoFrog}
+              alt="Ukiyo-e style frog"
+              className="about-accent-icon"
+            />
+          </div>
+
+          <div className="about-values">
+            <div className="value-card">
+              <p className="value-card-label">Clear Communication</p>
+              <p>
+                In teaching and coding alike, I wholeheartedly believe that communication is the foundation.
+              </p>
+            </div>
+            <div className="value-card">
+              <p className="value-card-label">First Principles</p>
+              <p>
+                I value understanding the fundamentals before reaching for the framework.
+                Building from the ground up.
+              </p>
+            </div>
+            <div className="value-card">
+              <p className="value-card-label">Slow &amp; Steady</p>
+              <p>
+                Iteration over perfection. Small steps, compounding over time.
+                The turtle always finishes.
+              </p>
+            </div>
+            <div className="value-card">
+              <p className="value-card-label">Teaching &amp; Learning</p>
+              <p>
+                I will do both for as long as my lungs work! Life long learning. I'm a student of life.
+              </p>
             </div>
           </div>
         </div>
