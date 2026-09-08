@@ -2,12 +2,21 @@ const projects = [
   {
     title: 'Florilegium',
     description:
-      "My main project that I'm building and maintaining. A reading tracker built around intentionality, run on its own custom domain. Built with Next.js App Router and Server Components, raw PostgreSQL without an ORM, custom JWT auth with email verification via Resend, and the Open Library API for book metadata.",
+      "My main project that I'm building and maintaining. A reading tracker built around intentionality, run on its own custom domain. Built with Next.js App Router and Server Components, PostgreSQL, custom JWT auth with email verification via Resend, and the Open Library API for book metadata.",
     tags: ['Next.js', 'PostgreSQL', 'TypeScript', 'TailwindCSS'],
     featured: true,
     available: true,
     live: 'https://florilegium.page',
     github: 'https://github.com/stevenlomon/florilegium',
+  },
+  {
+    title: 'Lock In Intention Timer',
+    description:
+      'Set what you intend to accomplish, lock in, and reflect when time is up. Built with useReducer and a finite state machine, drift-resistant timing and session persistence via localStorage.',
+    tags: ['React', 'Vite', 'JavaScript'],
+    available: true,
+    live: 'https://stevenlomon.github.io/lock-in-intention-timer/',
+    github: 'https://github.com/stevenlomon/lock-in-intention-timer',
   },
   {
     title: 'Linkin Park E-Store',
@@ -19,6 +28,15 @@ const projects = [
     github: 'https://github.com/stevenlomon/linkin-park-e-shop',
   },
   {
+    title: 'MyPokéCollection',
+    description:
+      'A Pokemon card collection manager rebuilt from a Vite React SPA into Next.js to explore server components and the App Router. Browse, search, and organize cards via the PokeWallet API.',
+    tags: ['Next.js', 'TypeScript', 'TailwindCSS'],
+    available: true,
+    live: 'https://my-next-poke-collection.vercel.app/',
+    github: 'https://github.com/stevenlomon/my-poke-collection',
+  },
+  {
     title: 'Vibe Salad',
     description:
       'A music discovery app powered by the Spotify API that serves up a shuffled mix of tracks with search and genre filtering.',
@@ -26,15 +44,6 @@ const projects = [
     available: false,
     live: '#',
     github: 'https://github.com/stevenlomon/FSU-kunskapskontroll-3',
-  },
-  {
-    title: 'MyPokéCollection',
-    description:
-      'A Pokemon card collection manager rebuilt from a Vite React SPA into Next.js to explore server components and the App Router. Browse, search, and organize cards via the PokeWallet API.',
-    tags: ['Next.js', 'TypeScript', 'TailwindCSS', 'PokéWallet API'],
-    available: true,
-    live: 'https://my-next-poke-collection.vercel.app/',
-    github: 'https://github.com/stevenlomon/my-poke-collection',
   },
 ]
 
