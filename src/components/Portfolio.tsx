@@ -3,11 +3,20 @@ const projects = [
     title: 'Florilegium',
     description:
       "My main project that I'm building and maintaining. A reading tracker built around intentionality, run on its own custom domain. Built with Next.js App Router and Server Components, PostgreSQL, custom JWT auth with email verification via Resend, and the Open Library API for book metadata.",
-    tags: ['Next.js', 'PostgreSQL', 'TypeScript', 'TailwindCSS'],
+    tags: ['Next.js', 'PostgreSQL', 'TypeScript', 'TailwindCSS', 'CI/CD'],
     featured: true,
     available: true,
     live: 'https://florilegium.page',
     github: 'https://github.com/stevenlomon/florilegium',
+  },
+  {
+    title: 'CML Massage & Wellness',
+    description:
+      'A real client project: migrating a local massage business from a bloated WordPress site with a pirated theme and 13 plugins to lean, custom-built PHP 8. Flat-file JSON data, structured JSON-LD for local SEO, and automated deploys via GitHub Actions over SFTP.',
+    tags: ['PHP 8', 'CI/CD'],
+    available: false,
+    live: '#',
+    github: 'https://github.com/stevenlomon/cml-massage-rebuild',
   },
   {
     title: 'Lock In Intention Timer',
@@ -21,7 +30,7 @@ const projects = [
   {
     title: 'Vibe Salad',
     description:
-      'A music discovery app powered by the Spotify API that serves up a shuffled mix of tracks with search and genre filtering.',
+      'A music discovery app powered by the Spotify API that serves up a shuffled mix of tracks with search and genre filtering. Built with token-based auth against Spotify\'s OAuth flow.',
     tags: ['TypeScript', 'Spotify API'],
     available: true,
     live: 'https://vibe-salad.vercel.app/',
