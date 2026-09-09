@@ -18,7 +18,7 @@ export default function About() {
           </div>
 
           <div className="about-text">
-            <h3>From the classroom to the codebase</h3>
+            <h3>From the library to the codebase</h3>
             <p>
               Before writing any single line of code, I worked as a librarian and substitute math teacher. Two jobs
               that will always hold a very dear and special place in my heart.
