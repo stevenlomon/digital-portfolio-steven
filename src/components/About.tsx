@@ -26,7 +26,7 @@ export default function About() {
             </p>
             <p>
               My journey into development began with Harvard's CS50 which planted a very important seed.
-              Today I'm formalizing that craft as a Full-Stack Developer in training at Medieinstitet.
+              Today I'm formalizing that craft as a Full-Stack Developer in training at Medieinstitutet.
             </p>
             <p>
               From designing relational schemas in PostgreSQL to writing typesafe logic in TypeSctipt to shaping clean,
