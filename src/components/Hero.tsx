@@ -8,8 +8,7 @@ export default function Hero() {
           <p className="hero-eyebrow">Hi! :)) I'm</p>
           <h1 className="hero-title">Steven Lomon Lennartsson</h1>
           <p className="hero-description">
-            Full-Stack hatchling, lover of everything music and book related, and hobby gardener tending to the garden that is{' '}
-            <em>Florilegium</em>
+            Full-Stack hatchling, lover of everything music and book related, trying to leave the world a little better than I found it.
           </p>
           <a href="#portfolio" className="hero-cta">
             View My Work
