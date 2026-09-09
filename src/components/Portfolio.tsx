@@ -19,6 +19,15 @@ const projects = [
     github: 'https://github.com/stevenlomon/lock-in-intention-timer',
   },
   {
+    title: 'Vibe Salad',
+    description:
+      'A music discovery app powered by the Spotify API that serves up a shuffled mix of tracks with search and genre filtering.',
+    tags: ['TypeScript', 'Spotify API'],
+    available: true,
+    live: 'https://vibe-salad.vercel.app/',
+    github: 'https://github.com/stevenlomon/vibe-salad',
+  },
+  {
     title: 'Linkin Park E-Store',
     description:
       'A full-stack e-commerce store for Linkin Park merchandise with product browsing, user accounts, checkout, and an admin dashboard. ',
@@ -35,15 +44,6 @@ const projects = [
     available: true,
     live: 'https://my-next-poke-collection.vercel.app/',
     github: 'https://github.com/stevenlomon/my-poke-collection',
-  },
-  {
-    title: 'Vibe Salad',
-    description:
-      'A music discovery app powered by the Spotify API that serves up a shuffled mix of tracks with search and genre filtering.',
-    tags: ['TypeScript', 'Spotify API'],
-    available: false,
-    live: '#',
-    github: 'https://github.com/stevenlomon/FSU-kunskapskontroll-3',
   },
 ]
 
