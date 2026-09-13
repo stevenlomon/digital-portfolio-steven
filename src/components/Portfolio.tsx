@@ -2,8 +2,8 @@ const projects = [
   {
     title: 'Florilegium',
     description:
-      "My main project that I'm building and maintaining. A reading tracker built around intentionality, run on its own custom domain. Built with Next.js App Router and Server Components, PostgreSQL, custom JWT auth with email verification via Resend, and the Open Library API for book metadata.",
-    tags: ['Next.js', 'PostgreSQL', 'TypeScript', 'TailwindCSS', 'CI/CD'],
+      "My passion project that I'm building and maintaining. A reading tracker built around intentionality, run on its own custom domain. Built with Next.js App Router and Server Components, PostgreSQL, custom JWT auth with email verification via Resend, and the Open Library API for book metadata. Tested with Vitest and verified on every push via CI.",
+    tags: ['Next.js', 'PostgreSQL', 'TypeScript', 'TailwindCSS', 'Vitest', 'CI/CD'],
     featured: true,
     available: true,
     live: 'https://florilegium.page',
