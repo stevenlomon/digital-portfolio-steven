@@ -20,12 +20,12 @@ export default function About() {
           <div className="about-text">
             <h3>From the library to the codebase</h3>
             <p>
-              Before writing any single line of code, I worked as a librarian and substitute math teacher. Two jobs
+              Before writing a single line of code, I worked as a librarian and substitute math teacher. Two jobs
               that will always hold a very dear and special place in my heart.
               Those parts of me love to come out in unexpected ways when coding and collaborating.
             </p>
             <p>
-              My journey into development began with Harvard's CS50 which planted a very important seed.
+              My journey into development began with Harvard's CS50, which planted a very important seed.
               Today I'm formalizing that craft as a Full-Stack Developer in training at Medieinstitutet.
             </p>
             <p>
@@ -72,7 +72,7 @@ export default function About() {
             <div className="value-card">
               <p className="value-card-label">Teaching &amp; Learning</p>
               <p>
-                I will do both for as long as my lungs work! Life long learning. I'm a student of life.
+                I will do both for as long as my lungs work! Lifelong learning. I'm a student of life.
               </p>
             </div>
           </div>

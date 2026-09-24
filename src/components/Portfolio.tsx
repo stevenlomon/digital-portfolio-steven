@@ -48,7 +48,7 @@ const projects = [
   {
     title: 'MyPokéCollection',
     description:
-      'A Pokemon card collection manager rebuilt from a Vite React SPA into Next.js to explore server components and the App Router. Browse, search, and organize cards via the PokeWallet API.',
+      'A Pokémon card collection manager rebuilt from a Vite React SPA into Next.js to explore server components and the App Router. Browse, search, and organize cards via the PokeWallet API.',
     tags: ['Next.js', 'TypeScript', 'TailwindCSS'],
     available: true,
     live: 'https://my-next-poke-collection.vercel.app/',
