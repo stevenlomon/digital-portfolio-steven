@@ -29,7 +29,7 @@ export default function About() {
               Today I'm formalizing that craft as a Full-Stack Developer in training at Medieinstitutet.
             </p>
             <p>
-              From designing relational schemas in PostgreSQL to writing typesafe logic in TypeSctipt to shaping clean,
+              From designing relational schemas in PostgreSQL to writing typesafe logic in TypeScript to shaping clean,
               responsive UI with TailwindCSS, I love the Full-Stack world so far! And my goal with every project is to create
               an intuitive, clean and human-centered user experience.
             </p>
