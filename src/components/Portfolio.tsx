@@ -10,13 +10,13 @@ const projects = [
     github: 'https://github.com/stevenlomon/florilegium',
   },
   {
-    title: 'CML Massage & Wellness',
+    title: 'Nocturne',
     description:
-      'A real client project: migrating a local massage business from a bloated WordPress site with a pirated theme and 13 plugins to lean, custom-built PHP 8. Flat-file JSON data, structured JSON-LD for local SEO, and automated deploys via GitHub Actions over SFTP.',
-    tags: ['PHP 8', 'CI/CD'],
-    available: false,
-    live: '#',
-    github: 'https://github.com/stevenlomon/cml-massage-rebuild',
+      'A full-stack murder mystery platform built in an agile team of three over a three-week sprint. I was responsible for the lobby system and team structure with real-time sync, plus auth and access control via Supabase. Managed with GitHub Projects, sprint planning, and continuous code review via PRs.',
+    tags: ['Next.js', 'TypeScript', 'TailwindCSS', 'Supabase', 'GitHub Projects'],
+    available: true,
+    live: 'https://murder-mystery-rust.vercel.app/',
+    github: 'https://github.com/Carowa27/murder-mystery',
   },
   {
     title: 'Lock In Intention Timer',
